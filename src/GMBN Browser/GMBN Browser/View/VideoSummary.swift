@@ -3,8 +3,6 @@ import SwiftUI
 struct VideoSummary: View {
     let viewModel: VideoSummaryViewModel
     
-    var durationFormatter = NearestMinuteDurationFormatter()
-    
     var body: some View {
         VStack {
             AsyncImage(url: self.viewModel.imageUrl) { image in
@@ -31,4 +29,8 @@ struct VideoSummary: View {
         .background(.white)
         .cornerRadius(10)
     }
+    
+    private let durationFormatter = NearestMinuteDurationFormatter()
+}
+
 }

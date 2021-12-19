@@ -19,7 +19,7 @@ struct VideoList: View {
                             .background(Color(.secondarySystemBackground))
                         }
                         .buttonStyle(.plain)
-                        .padding(12)
+                        .padding(Constants.defaultPadding)
                         
                         if (self.viewModel.isLoading) {
                             ProgressView()
@@ -29,13 +29,11 @@ struct VideoList: View {
                 .background(Color(.secondarySystemBackground))
                 .onAppear { self.viewModel.loadMore() }
             }
-            .navigationTitle("All Videos")
+            .navigationTitle("All Videos".localise())
         }
     }
-
-//    init(viewModel: VideoListViewModel) {
-//        self.viewModel = viewModel
-//
-//        UITableView.appearance().backgroundColor = .clear
-//    }
+    
+    private class Constants {
+        static let defaultPadding = CGFloat(12)
+    }
 }

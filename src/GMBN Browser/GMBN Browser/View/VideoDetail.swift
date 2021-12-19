@@ -3,8 +3,6 @@ import SwiftUI
 struct VideoDetail: View {
     let viewModel: VideoSummaryViewModel
     
-    var durationFormatter = NearestMinuteDurationFormatter()
-    
     var body: some View {
         ScrollView {
             VStack {
@@ -12,29 +10,43 @@ struct VideoDetail: View {
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(maxHeight: 180)
+                        .frame(maxHeight: Constants.defaultThumbnailHeight)
                 } placeholder: {
                     ProgressView()
-                        .frame(width: 320, height: 180)
+                        .frame(
+                            width: Constants.defaultThumbnailWidth,
+                            height: Constants.defaultThumbnailHeight
+                        )
                 }
                 HStack {
                     Text(self.viewModel.published, style: .date).font(.caption)
                     Spacer()
-                    Text(self.durationFormatter.format(self.viewModel.duration)).font(.caption)
+                    Text(self.durationFormatter.format(self.viewModel.duration))
+                        .font(.caption)
                 }
-                .padding(6)
+                .padding(Constants.defaultCaptionPadding)
                 Text(self.viewModel.title)
                     .multilineTextAlignment(.center)
                     .font(.title)
-                    .padding([.leading, .trailing, .bottom], 12)
+                    .padding([.leading, .trailing, .bottom], Constants.defaultPadding)
                 
                 Text(self.viewModel.description)
-                    .padding([.leading, .trailing, .bottom], 12)
+                    .padding([.leading, .trailing, .bottom], Constants.defaultPadding)
             }
             .background(.white)
-            .cornerRadius(10)
-            .padding(12)
+            .cornerRadius(Constants.defaultCornerRadius)
+            .padding(Constants.defaultPadding)
         }
         .background(Color(.secondarySystemBackground))
+    }
+    
+    private let durationFormatter = NearestMinuteDurationFormatter()
+    
+    private class Constants {
+        static let defaultCornerRadius = CGFloat(10)
+        static let defaultPadding = CGFloat(12)
+        static let defaultCaptionPadding = CGFloat(6)
+        static let defaultThumbnailWidth = CGFloat(320)
+        static let defaultThumbnailHeight = CGFloat(180)
     }
 }
