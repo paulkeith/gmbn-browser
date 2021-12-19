@@ -6,18 +6,7 @@ struct VideoDetail: View {
     var body: some View {
         ScrollView {
             VStack {
-                AsyncImage(url: self.viewModel.imageUrl) { image in
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(maxHeight: Constants.defaultThumbnailHeight)
-                } placeholder: {
-                    ProgressView()
-                        .frame(
-                            width: Constants.defaultThumbnailWidth,
-                            height: Constants.defaultThumbnailHeight
-                        )
-                }
+                Thumbnail(url: self.viewModel.imageUrl)
                 HStack {
                     Text(self.viewModel.published, style: .date).font(.caption)
                     Spacer()
@@ -46,7 +35,5 @@ struct VideoDetail: View {
         static let defaultCornerRadius = CGFloat(10)
         static let defaultPadding = CGFloat(12)
         static let defaultCaptionPadding = CGFloat(6)
-        static let defaultThumbnailWidth = CGFloat(320)
-        static let defaultThumbnailHeight = CGFloat(180)
     }
 }

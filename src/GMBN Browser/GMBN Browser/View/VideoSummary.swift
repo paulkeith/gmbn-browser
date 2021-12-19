@@ -5,15 +5,7 @@ struct VideoSummary: View {
     
     var body: some View {
         VStack {
-            AsyncImage(url: self.viewModel.imageUrl) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(maxHeight: 180)
-            } placeholder: {
-                ProgressView()
-                    .frame(width: 320, height: 180)
-            }
+            Thumbnail(url: self.viewModel.imageUrl)
             HStack {
                 Text(self.viewModel.published, style: .date).font(.caption)
                 Spacer()
@@ -31,6 +23,4 @@ struct VideoSummary: View {
     }
     
     private let durationFormatter = NearestMinuteDurationFormatter()
-}
-
 }

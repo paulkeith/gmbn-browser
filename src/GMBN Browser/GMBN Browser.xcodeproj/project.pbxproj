@@ -26,6 +26,7 @@
 		EF67815F276F5C5A0041AB5B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67815E276F5C5A0041AB5B /* Video.swift */; };
 		EF678161276F5D810041AB5B /* YouTubeVideoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678160276F5D810041AB5B /* YouTubeVideoRepository.swift */; };
 		EF678163276F6FE50041AB5B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678162276F6FE50041AB5B /* StringExtensions.swift */; };
+		EF678165276F732E0041AB5B /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678164276F732E0041AB5B /* Thumbnail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		EF67815E276F5C5A0041AB5B /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		EF678160276F5D810041AB5B /* YouTubeVideoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideoRepository.swift; sourceTree = "<group>"; };
 		EF678162276F6FE50041AB5B /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		EF678164276F732E0041AB5B /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		EF678141276DFB980041AB5B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EF678164276F732E0041AB5B /* Thumbnail.swift */,
 				EF67814E276E07BF0041AB5B /* VideoDetail.swift */,
 				EF678144276DFD610041AB5B /* VideoList.swift */,
 				EF678142276DFBE60041AB5B /* VideoSummary.swift */,
@@ -323,6 +326,7 @@
 				EF678156276E0F770041AB5B /* NearestMinuteDurationFormatter.swift in Sources */,
 				EF678152276E0BF80041AB5B /* TimeIntervalExtensions.swift in Sources */,
 				EF678143276DFBE60041AB5B /* VideoSummary.swift in Sources */,
+				EF678165276F732E0041AB5B /* Thumbnail.swift in Sources */,
 				EF67814B276DFE170041AB5B /* VideoListViewModel.swift in Sources */,
 				EF67815F276F5C5A0041AB5B /* Video.swift in Sources */,
 				EF67815D276F5C180041AB5B /* VideoRepository.swift in Sources */,
