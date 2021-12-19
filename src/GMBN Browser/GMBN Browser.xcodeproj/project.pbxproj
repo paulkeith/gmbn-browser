@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF678118276DF9840041AB5B /* GMBN_BrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678117276DF9840041AB5B /* GMBN_BrowserApp.swift */; };
+		EF67811A276DF9840041AB5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678119276DF9840041AB5B /* ContentView.swift */; };
+		EF67811C276DF9860041AB5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF67811B276DF9860041AB5B /* Assets.xcassets */; };
+		EF67811F276DF9860041AB5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF67811E276DF9860041AB5B /* Preview Assets.xcassets */; };
+		EF678143276DFBE60041AB5B /* VideoSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678142276DFBE60041AB5B /* VideoSummary.swift */; };
+		EF678145276DFD610041AB5B /* VideoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678144276DFD610041AB5B /* VideoList.swift */; };
+		EF67814B276DFE170041AB5B /* VideoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67814A276DFE170041AB5B /* VideoListViewModel.swift */; };
+		EF67814D276DFE310041AB5B /* VideoSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67814C276DFE310041AB5B /* VideoSummaryViewModel.swift */; };
+		EF67814F276E07BF0041AB5B /* VideoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67814E276E07BF0041AB5B /* VideoDetail.swift */; };
+		EF678152276E0BF80041AB5B /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678151276E0BF80041AB5B /* TimeIntervalExtensions.swift */; };
+		EF678154276E0C220041AB5B /* TimeIntervalExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678153276E0C220041AB5B /* TimeIntervalExtensionsTests.swift */; };
+		EF678156276E0F770041AB5B /* NearestMinuteDurationFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678155276E0F770041AB5B /* NearestMinuteDurationFormatter.swift */; };
+		EF678158276E0F960041AB5B /* NearestMinuteDurationFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678157276E0F960041AB5B /* NearestMinuteDurationFormatterTests.swift */; };
+		EF678159276E0FE80041AB5B /* NearestMinuteDurationFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678155276E0F770041AB5B /* NearestMinuteDurationFormatter.swift */; };
+		EF67815A276E0FEC0041AB5B /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678151276E0BF80041AB5B /* TimeIntervalExtensions.swift */; };
+		EF67815D276F5C180041AB5B /* VideoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67815C276F5C180041AB5B /* VideoRepository.swift */; };
+		EF67815F276F5C5A0041AB5B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67815E276F5C5A0041AB5B /* Video.swift */; };
+		EF678161276F5D810041AB5B /* YouTubeVideoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678160276F5D810041AB5B /* YouTubeVideoRepository.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF678125276DF9860041AB5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF67810C276DF9840041AB5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF678113276DF9840041AB5B;
+			remoteInfo = "GMBN Browser";
+		};
+		EF67812F276DF9860041AB5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF67810C276DF9840041AB5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF678113276DF9840041AB5B;
+			remoteInfo = "GMBN Browser";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF678114276DF9840041AB5B /* GMBN Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GMBN Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF678117276DF9840041AB5B /* GMBN_BrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMBN_BrowserApp.swift; sourceTree = "<group>"; };
+		EF678119276DF9840041AB5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF67811B276DF9860041AB5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF67811E276DF9860041AB5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF678124276DF9860041AB5B /* GMBN BrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GMBN BrowserTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF67812E276DF9860041AB5B /* GMBN BrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GMBN BrowserUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF678142276DFBE60041AB5B /* VideoSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSummary.swift; sourceTree = "<group>"; };
+		EF678144276DFD610041AB5B /* VideoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoList.swift; sourceTree = "<group>"; };
+		EF67814A276DFE170041AB5B /* VideoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewModel.swift; sourceTree = "<group>"; };
+		EF67814C276DFE310041AB5B /* VideoSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSummaryViewModel.swift; sourceTree = "<group>"; };
+		EF67814E276E07BF0041AB5B /* VideoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetail.swift; sourceTree = "<group>"; };
+		EF678151276E0BF80041AB5B /* TimeIntervalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensions.swift; sourceTree = "<group>"; };
+		EF678153276E0C220041AB5B /* TimeIntervalExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensionsTests.swift; sourceTree = "<group>"; };
+		EF678155276E0F770041AB5B /* NearestMinuteDurationFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestMinuteDurationFormatter.swift; sourceTree = "<group>"; };
+		EF678157276E0F960041AB5B /* NearestMinuteDurationFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestMinuteDurationFormatterTests.swift; sourceTree = "<group>"; };
+		EF67815C276F5C180041AB5B /* VideoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRepository.swift; sourceTree = "<group>"; };
+		EF67815E276F5C5A0041AB5B /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		EF678160276F5D810041AB5B /* YouTubeVideoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideoRepository.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF678111276DF9840041AB5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF678121276DF9860041AB5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF67812B276DF9860041AB5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF67810B276DF9840041AB5B = {
+			isa = PBXGroup;
+			children = (
+				EF678116276DF9840041AB5B /* GMBN Browser */,
+				EF678127276DF9860041AB5B /* GMBN BrowserTests */,
+				EF678115276DF9840041AB5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF678115276DF9840041AB5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF678114276DF9840041AB5B /* GMBN Browser.app */,
+				EF678124276DF9860041AB5B /* GMBN BrowserTests.xctest */,
+				EF67812E276DF9860041AB5B /* GMBN BrowserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF678116276DF9840041AB5B /* GMBN Browser */ = {
+			isa = PBXGroup;
+			children = (
+				EF67811B276DF9860041AB5B /* Assets.xcassets */,
+				EF678119276DF9840041AB5B /* ContentView.swift */,
+				EF678150276E0BE30041AB5B /* Core */,
+				EF678117276DF9840041AB5B /* GMBN_BrowserApp.swift */,
+				EF67815B276F5BEC0041AB5B /* Model */,
+				EF67811D276DF9860041AB5B /* Preview Content */,
+				EF678141276DFB980041AB5B /* View */,
+				EF678149276DFE020041AB5B /* ViewModel */,
+			);
+			path = "GMBN Browser";
+			sourceTree = "<group>";
+		};
+		EF67811D276DF9860041AB5B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF67811E276DF9860041AB5B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF678127276DF9860041AB5B /* GMBN BrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF678157276E0F960041AB5B /* NearestMinuteDurationFormatterTests.swift */,
+				EF678153276E0C220041AB5B /* TimeIntervalExtensionsTests.swift */,
+			);
+			path = "GMBN BrowserTests";
+			sourceTree = "<group>";
+		};
+		EF678141276DFB980041AB5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF67814E276E07BF0041AB5B /* VideoDetail.swift */,
+				EF678144276DFD610041AB5B /* VideoList.swift */,
+				EF678142276DFBE60041AB5B /* VideoSummary.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF678149276DFE020041AB5B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF67814A276DFE170041AB5B /* VideoListViewModel.swift */,
+				EF67814C276DFE310041AB5B /* VideoSummaryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EF678150276E0BE30041AB5B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EF678155276E0F770041AB5B /* NearestMinuteDurationFormatter.swift */,
+				EF678151276E0BF80041AB5B /* TimeIntervalExtensions.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EF67815B276F5BEC0041AB5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF67815E276F5C5A0041AB5B /* Video.swift */,
+				EF67815C276F5C180041AB5B /* VideoRepository.swift */,
+				EF678160276F5D810041AB5B /* YouTubeVideoRepository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF678113276DF9840041AB5B /* GMBN Browser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF678138276DF9860041AB5B /* Build configuration list for PBXNativeTarget "GMBN Browser" */;
+			buildPhases = (
+				EF678110276DF9840041AB5B /* Sources */,
+				EF678111276DF9840041AB5B /* Frameworks */,
+				EF678112276DF9840041AB5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GMBN Browser";
+			packageProductDependencies = (
+			);
+			productName = "GMBN Browser";
+			productReference = EF678114276DF9840041AB5B /* GMBN Browser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF678123276DF9860041AB5B /* GMBN BrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF67813B276DF9860041AB5B /* Build configuration list for PBXNativeTarget "GMBN BrowserTests" */;
+			buildPhases = (
+				EF678120276DF9860041AB5B /* Sources */,
+				EF678121276DF9860041AB5B /* Frameworks */,
+				EF678122276DF9860041AB5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF678126276DF9860041AB5B /* PBXTargetDependency */,
+			);
+			name = "GMBN BrowserTests";
+			productName = "GMBN BrowserTests";
+			productReference = EF678124276DF9860041AB5B /* GMBN BrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF67812D276DF9860041AB5B /* GMBN BrowserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF67813E276DF9860041AB5B /* Build configuration list for PBXNativeTarget "GMBN BrowserUITests" */;
+			buildPhases = (
+				EF67812A276DF9860041AB5B /* Sources */,
+				EF67812B276DF9860041AB5B /* Frameworks */,
+				EF67812C276DF9860041AB5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF678130276DF9860041AB5B /* PBXTargetDependency */,
+			);
+			name = "GMBN BrowserUITests";
+			productName = "GMBN BrowserUITests";
+			productReference = EF67812E276DF9860041AB5B /* GMBN BrowserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF67810C276DF9840041AB5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					EF678113276DF9840041AB5B = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					EF678123276DF9860041AB5B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = EF678113276DF9840041AB5B;
+					};
+					EF67812D276DF9860041AB5B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = EF678113276DF9840041AB5B;
+					};
+				};
+			};
+			buildConfigurationList = EF67810F276DF9840041AB5B /* Build configuration list for PBXProject "GMBN Browser" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF67810B276DF9840041AB5B;
+			packageReferences = (
+			);
+			productRefGroup = EF678115276DF9840041AB5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF678113276DF9840041AB5B /* GMBN Browser */,
+				EF678123276DF9860041AB5B /* GMBN BrowserTests */,
+				EF67812D276DF9860041AB5B /* GMBN BrowserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF678112276DF9840041AB5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF67811F276DF9860041AB5B /* Preview Assets.xcassets in Resources */,
+				EF67811C276DF9860041AB5B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF678122276DF9860041AB5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF67812C276DF9860041AB5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF678110276DF9840041AB5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF67811A276DF9840041AB5B /* ContentView.swift in Sources */,
+				EF678145276DFD610041AB5B /* VideoList.swift in Sources */,
+				EF67814F276E07BF0041AB5B /* VideoDetail.swift in Sources */,
+				EF678156276E0F770041AB5B /* NearestMinuteDurationFormatter.swift in Sources */,
+				EF678152276E0BF80041AB5B /* TimeIntervalExtensions.swift in Sources */,
+				EF678143276DFBE60041AB5B /* VideoSummary.swift in Sources */,
+				EF67814B276DFE170041AB5B /* VideoListViewModel.swift in Sources */,
+				EF67815F276F5C5A0041AB5B /* Video.swift in Sources */,
+				EF67815D276F5C180041AB5B /* VideoRepository.swift in Sources */,
+				EF678118276DF9840041AB5B /* GMBN_BrowserApp.swift in Sources */,
+				EF67814D276DFE310041AB5B /* VideoSummaryViewModel.swift in Sources */,
+				EF678161276F5D810041AB5B /* YouTubeVideoRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF678120276DF9860041AB5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF678158276E0F960041AB5B /* NearestMinuteDurationFormatterTests.swift in Sources */,
+				EF678159276E0FE80041AB5B /* NearestMinuteDurationFormatter.swift in Sources */,
+				EF67815A276E0FEC0041AB5B /* TimeIntervalExtensions.swift in Sources */,
+				EF678154276E0C220041AB5B /* TimeIntervalExtensionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF67812A276DF9860041AB5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF678126276DF9860041AB5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF678113276DF9840041AB5B /* GMBN Browser */;
+			targetProxy = EF678125276DF9860041AB5B /* PBXContainerItemProxy */;
+		};
+		EF678130276DF9860041AB5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF678113276DF9840041AB5B /* GMBN Browser */;
+			targetProxy = EF67812F276DF9860041AB5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF678136276DF9860041AB5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF678137276DF9860041AB5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF678139276DF9860041AB5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GMBN Browser/Preview Content\"";
+				DEVELOPMENT_TEAM = BY6AW2U94U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.paulkeith.GMBN-Browser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EF67813A276DF9860041AB5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GMBN Browser/Preview Content\"";
+				DEVELOPMENT_TEAM = BY6AW2U94U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.paulkeith.GMBN-Browser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EF67813C276DF9860041AB5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BY6AW2U94U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.paulkeith.GMBN-BrowserTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GMBN Browser.app/GMBN Browser";
+			};
+			name = Debug;
+		};
+		EF67813D276DF9860041AB5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BY6AW2U94U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.paulkeith.GMBN-BrowserTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GMBN Browser.app/GMBN Browser";
+			};
+			name = Release;
+		};
+		EF67813F276DF9860041AB5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BY6AW2U94U;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.paulkeith.GMBN-BrowserUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GMBN Browser";
+			};
+			name = Debug;
+		};
+		EF678140276DF9860041AB5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BY6AW2U94U;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.paulkeith.GMBN-BrowserUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GMBN Browser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF67810F276DF9840041AB5B /* Build configuration list for PBXProject "GMBN Browser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF678136276DF9860041AB5B /* Debug */,
+				EF678137276DF9860041AB5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF678138276DF9860041AB5B /* Build configuration list for PBXNativeTarget "GMBN Browser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF678139276DF9860041AB5B /* Debug */,
+				EF67813A276DF9860041AB5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF67813B276DF9860041AB5B /* Build configuration list for PBXNativeTarget "GMBN BrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF67813C276DF9860041AB5B /* Debug */,
+				EF67813D276DF9860041AB5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF67813E276DF9860041AB5B /* Build configuration list for PBXNativeTarget "GMBN BrowserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF67813F276DF9860041AB5B /* Debug */,
+				EF678140276DF9860041AB5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF67810C276DF9840041AB5B /* Project object */;
+}
