@@ -20,10 +20,10 @@ struct VideoList: View {
                         }
                         .buttonStyle(.plain)
                         .padding(Constants.defaultPadding)
-                        
-                        if (self.viewModel.isLoading) {
-                            ProgressView()
-                        }
+                    }
+                    
+                    if (self.viewModel.isLoading) {
+                        ProgressView().padding(Constants.defaultPadding)
                     }
                 }
                 .background(Color(.secondarySystemBackground))
