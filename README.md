@@ -9,12 +9,14 @@ Supports iOS 15 and later.
 ## Getting Started
 
 1. Open src/GMBN Browser/GMBN Browser.xcodeproj in xcode.
-2. Press the play button.
+2. Go to File -> Packages -> Resolve Package Versions
+3. Press the play button.
 
 ## Running The Tests
 
 1. Open src/GMBN Browser/GMBN Browser.xcodeproj in xcode.
-2. Select Product -> Test from the xcode menu.
+2. Go to File -> Packages -> Resolve Package Versions
+3. Select Product -> Test from the xcode menu.
 
 ## Implementation
 
