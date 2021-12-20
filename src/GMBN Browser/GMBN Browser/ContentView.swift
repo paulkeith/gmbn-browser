@@ -2,9 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VideoList(
-            viewModel: try! GMBN_BrowserApp.container.resolve()
-        )
+        VideoList(viewModel: try! GMBN_BrowserApp.container.resolve())
     }
 }
 

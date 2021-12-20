@@ -12,7 +12,7 @@ struct GMBN_BrowserApp: App {
     static let container: DependencyContainer = {
         let container = DependencyContainer()
         
-        container.register(.singleton) { YouTubeVideoRepository() as VideoRepository }
+        container.register(.singleton) { HardCodedResultsVideoRepository() as VideoRepository }
         
         container.register(.unique) {
             VideoListViewModel(repository: try! container.resolve()!)

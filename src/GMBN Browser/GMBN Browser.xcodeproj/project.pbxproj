@@ -24,7 +24,7 @@
 		EF67815A276E0FEC0041AB5B /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678151276E0BF80041AB5B /* TimeIntervalExtensions.swift */; };
 		EF67815D276F5C180041AB5B /* VideoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67815C276F5C180041AB5B /* VideoRepository.swift */; };
 		EF67815F276F5C5A0041AB5B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF67815E276F5C5A0041AB5B /* Video.swift */; };
-		EF678161276F5D810041AB5B /* YouTubeVideoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678160276F5D810041AB5B /* YouTubeVideoRepository.swift */; };
+		EF678161276F5D810041AB5B /* HardCodedResultsVideoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678160276F5D810041AB5B /* HardCodedResultsVideoRepository.swift */; };
 		EF678163276F6FE50041AB5B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678162276F6FE50041AB5B /* StringExtensions.swift */; };
 		EF678165276F732E0041AB5B /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678164276F732E0041AB5B /* Thumbnail.swift */; };
 		EF6781722770A1700041AB5B /* Dip in Frameworks */ = {isa = PBXBuildFile; productRef = EF6781712770A1700041AB5B /* Dip */; };
@@ -66,7 +66,7 @@
 		EF678157276E0F960041AB5B /* NearestMinuteDurationFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestMinuteDurationFormatterTests.swift; sourceTree = "<group>"; };
 		EF67815C276F5C180041AB5B /* VideoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRepository.swift; sourceTree = "<group>"; };
 		EF67815E276F5C5A0041AB5B /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
-		EF678160276F5D810041AB5B /* YouTubeVideoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideoRepository.swift; sourceTree = "<group>"; };
+		EF678160276F5D810041AB5B /* HardCodedResultsVideoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardCodedResultsVideoRepository.swift; sourceTree = "<group>"; };
 		EF678162276F6FE50041AB5B /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		EF678164276F732E0041AB5B /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,9 +181,9 @@
 		EF67815B276F5BEC0041AB5B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EF678160276F5D810041AB5B /* HardCodedResultsVideoRepository.swift */,
 				EF67815E276F5C5A0041AB5B /* Video.swift */,
 				EF67815C276F5C180041AB5B /* VideoRepository.swift */,
-				EF678160276F5D810041AB5B /* YouTubeVideoRepository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -337,7 +337,7 @@
 				EF678118276DF9840041AB5B /* GMBN_BrowserApp.swift in Sources */,
 				EF67814D276DFE310041AB5B /* VideoSummaryViewModel.swift in Sources */,
 				EF678163276F6FE50041AB5B /* StringExtensions.swift in Sources */,
-				EF678161276F5D810041AB5B /* YouTubeVideoRepository.swift in Sources */,
+				EF678161276F5D810041AB5B /* HardCodedResultsVideoRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

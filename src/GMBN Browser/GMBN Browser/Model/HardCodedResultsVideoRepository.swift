@@ -1,7 +1,9 @@
 import Combine
 import Foundation
 
-class YouTubeVideoRepository: VideoRepository {
+/// A VideoRepository that always returns a page of 15 identical results after a two
+/// second delay.  This is only intended for development.
+class HardCodedResultsVideoRepository: VideoRepository {
     func get(offset: Int, count: Int) -> AnyPublisher<[Video], Error> {
         return (1...15).publisher
             .map { index in
