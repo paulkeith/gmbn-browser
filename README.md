@@ -2,7 +2,7 @@
 
 ## Description
 
-An iPhone application for browsing all the videos from the [GMBN YouTube channel](https://www.youtube.com/c/gmbn).  Videos are presented in ascending date order.  Scrolling to the bottom of the list causes the next page of results to be loaded.  Tapping on a video shows a detail view with more information about the selected video.
+An iPhone application for browsing all the videos from the [GMBN YouTube channel](https://www.youtube.com/c/gmbn).  Videos are presented in ascending date order.  Scrolling to the bottom of the list causes the next page of results to load.  Tapping on a video shows a detail view with more information about the selected video.
 
 Supports iOS 15 and later.
 
@@ -18,4 +18,9 @@ Supports iOS 15 and later.
 
 ## Implementation
 
-The app is architected according to the MVVM pattern.  The view layer is implemented in SwiftUI.  All asynchronous operations are modelled using the Combine framework.  Dependency injection is used to keep code SOLID and testable.  Dependencies are provided through constructor chaining.
+* The app is architected according to the MVVM pattern.
+* The view layer is implemented in SwiftUI.
+* All asynchronous operations are modelled using the Combine framework.
+* Dependency injection is used to keep code SOLID and testable.
+* [Dip](https://github.com/AliSoftware/Dip) is used for the DI container.
+* Swift Package Manager is used to manage third-party dependencies.

@@ -27,6 +27,7 @@
 		EF678161276F5D810041AB5B /* YouTubeVideoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678160276F5D810041AB5B /* YouTubeVideoRepository.swift */; };
 		EF678163276F6FE50041AB5B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678162276F6FE50041AB5B /* StringExtensions.swift */; };
 		EF678165276F732E0041AB5B /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678164276F732E0041AB5B /* Thumbnail.swift */; };
+		EF6781722770A1700041AB5B /* Dip in Frameworks */ = {isa = PBXBuildFile; productRef = EF6781712770A1700041AB5B /* Dip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF6781722770A1700041AB5B /* Dip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +205,7 @@
 			);
 			name = "GMBN Browser";
 			packageProductDependencies = (
+				EF6781712770A1700041AB5B /* Dip */,
 			);
 			productName = "GMBN Browser";
 			productReference = EF678114276DF9840041AB5B /* GMBN Browser.app */;
@@ -277,6 +280,7 @@
 			);
 			mainGroup = EF67810B276DF9840041AB5B;
 			packageReferences = (
+				EF6781702770A1700041AB5B /* XCRemoteSwiftPackageReference "Dip" */,
 			);
 			productRefGroup = EF678115276DF9840041AB5B /* Products */;
 			projectDirPath = "";
@@ -683,6 +687,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF6781702770A1700041AB5B /* XCRemoteSwiftPackageReference "Dip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Dip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF6781712770A1700041AB5B /* Dip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF6781702770A1700041AB5B /* XCRemoteSwiftPackageReference "Dip" */;
+			productName = Dip;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF67810C276DF9840041AB5B /* Project object */;
 }

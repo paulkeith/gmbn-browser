@@ -1,3 +1,4 @@
+import Dip
 import SwiftUI
 
 @main
@@ -7,4 +8,16 @@ struct GMBN_BrowserApp: App {
             ContentView()
         }
     }
+    
+    static let container: DependencyContainer = {
+        let container = DependencyContainer()
+        
+        container.register(.singleton) { YouTubeVideoRepository() as VideoRepository }
+        
+        container.register(.unique) {
+            VideoListViewModel(repository: try! container.resolve()!)
+        }
+        
+        return container
+    }()
 }
