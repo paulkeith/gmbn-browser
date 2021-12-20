@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF13E24627711453004277DF /* YouTubeSearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13E24527711453004277DF /* YouTubeSearchItem.swift */; };
+		EF13E24827711465004277DF /* YouTubeSearchItemId.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13E24727711465004277DF /* YouTubeSearchItemId.swift */; };
+		EF2B63BC2770FF4700C0896E /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = EF2B63BB2770FF4700C0896E /* CombineMoya */; };
+		EF2B63BE2770FF4700C0896E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = EF2B63BD2770FF4700C0896E /* Moya */; };
+		EF2B63C02771049C00C0896E /* YouTubeVideosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B63BF2771049C00C0896E /* YouTubeVideosResponse.swift */; };
+		EF2B63C227710C3F00C0896E /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B63C127710C3F00C0896E /* StringExtensionsTests.swift */; };
+		EF2B63C4277110B200C0896E /* YouTubeVideoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B63C3277110B200C0896E /* YouTubeVideoItem.swift */; };
+		EF2B63C6277110CB00C0896E /* YouTubeSnippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B63C5277110CB00C0896E /* YouTubeSnippet.swift */; };
+		EF2B63C8277110E100C0896E /* YouTubeThumbnails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B63C7277110E100C0896E /* YouTubeThumbnails.swift */; };
+		EF2B63CA277110F600C0896E /* YouTubeThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B63C9277110F600C0896E /* YouTubeThumbnail.swift */; };
+		EF2B63CC2771110C00C0896E /* YouTubeContentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B63CB2771110C00C0896E /* YouTubeContentDetails.swift */; };
 		EF678118276DF9840041AB5B /* GMBN_BrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678117276DF9840041AB5B /* GMBN_BrowserApp.swift */; };
 		EF67811A276DF9840041AB5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678119276DF9840041AB5B /* ContentView.swift */; };
 		EF67811C276DF9860041AB5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF67811B276DF9860041AB5B /* Assets.xcassets */; };
@@ -28,6 +39,11 @@
 		EF678163276F6FE50041AB5B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678162276F6FE50041AB5B /* StringExtensions.swift */; };
 		EF678165276F732E0041AB5B /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678164276F732E0041AB5B /* Thumbnail.swift */; };
 		EF6781722770A1700041AB5B /* Dip in Frameworks */ = {isa = PBXBuildFile; productRef = EF6781712770A1700041AB5B /* Dip */; };
+		EFE159F32770AA6100AE973F /* DescendingDataOrderYouTubeVideoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE159F22770AA6100AE973F /* DescendingDataOrderYouTubeVideoRepository.swift */; };
+		EFE159F52770AA9800AE973F /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE159F42770AA9800AE973F /* ApiKeys.swift */; };
+		EFE159F72770AAB800AE973F /* YouTubeEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE159F62770AAB800AE973F /* YouTubeEndpoints.swift */; };
+		EFE159FA2770AC0200AE973F /* YouTubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE159F92770AC0200AE973F /* YouTubeSearchResponse.swift */; };
+		EFE159FC2770ACF000AE973F /* YouTubeIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE159FB2770ACF000AE973F /* YouTubeIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +64,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF13E24527711453004277DF /* YouTubeSearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeSearchItem.swift; sourceTree = "<group>"; };
+		EF13E24727711465004277DF /* YouTubeSearchItemId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeSearchItemId.swift; sourceTree = "<group>"; };
+		EF2B63BF2771049C00C0896E /* YouTubeVideosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideosResponse.swift; sourceTree = "<group>"; };
+		EF2B63C127710C3F00C0896E /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
+		EF2B63C3277110B200C0896E /* YouTubeVideoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideoItem.swift; sourceTree = "<group>"; };
+		EF2B63C5277110CB00C0896E /* YouTubeSnippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeSnippet.swift; sourceTree = "<group>"; };
+		EF2B63C7277110E100C0896E /* YouTubeThumbnails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeThumbnails.swift; sourceTree = "<group>"; };
+		EF2B63C9277110F600C0896E /* YouTubeThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeThumbnail.swift; sourceTree = "<group>"; };
+		EF2B63CB2771110C00C0896E /* YouTubeContentDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeContentDetails.swift; sourceTree = "<group>"; };
 		EF678114276DF9840041AB5B /* GMBN Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GMBN Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF678117276DF9840041AB5B /* GMBN_BrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMBN_BrowserApp.swift; sourceTree = "<group>"; };
 		EF678119276DF9840041AB5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +94,11 @@
 		EF678160276F5D810041AB5B /* HardCodedResultsVideoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardCodedResultsVideoRepository.swift; sourceTree = "<group>"; };
 		EF678162276F6FE50041AB5B /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		EF678164276F732E0041AB5B /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		EFE159F22770AA6100AE973F /* DescendingDataOrderYouTubeVideoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescendingDataOrderYouTubeVideoRepository.swift; sourceTree = "<group>"; };
+		EFE159F42770AA9800AE973F /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		EFE159F62770AAB800AE973F /* YouTubeEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeEndpoints.swift; sourceTree = "<group>"; };
+		EFE159F92770AC0200AE973F /* YouTubeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeSearchResponse.swift; sourceTree = "<group>"; };
+		EFE159FB2770ACF000AE973F /* YouTubeIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2B63BC2770FF4700C0896E /* CombineMoya in Frameworks */,
 				EF6781722770A1700041AB5B /* Dip in Frameworks */,
+				EF2B63BE2770FF4700C0896E /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +159,7 @@
 				EF67811D276DF9860041AB5B /* Preview Content */,
 				EF678141276DFB980041AB5B /* View */,
 				EF678149276DFE020041AB5B /* ViewModel */,
+				EFE159F82770ABD200AE973F /* YouTubeApi */,
 			);
 			path = "GMBN Browser";
 			sourceTree = "<group>";
@@ -143,7 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				EF678157276E0F960041AB5B /* NearestMinuteDurationFormatterTests.swift */,
+				EF2B63C127710C3F00C0896E /* StringExtensionsTests.swift */,
 				EF678153276E0C220041AB5B /* TimeIntervalExtensionsTests.swift */,
+				EFE159FB2770ACF000AE973F /* YouTubeIntegrationTests.swift */,
 			);
 			path = "GMBN BrowserTests";
 			sourceTree = "<group>";
@@ -172,8 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				EF678155276E0F770041AB5B /* NearestMinuteDurationFormatter.swift */,
-				EF678151276E0BF80041AB5B /* TimeIntervalExtensions.swift */,
 				EF678162276F6FE50041AB5B /* StringExtensions.swift */,
+				EF678151276E0BF80041AB5B /* TimeIntervalExtensions.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -184,8 +219,27 @@
 				EF678160276F5D810041AB5B /* HardCodedResultsVideoRepository.swift */,
 				EF67815E276F5C5A0041AB5B /* Video.swift */,
 				EF67815C276F5C180041AB5B /* VideoRepository.swift */,
+				EFE159F42770AA9800AE973F /* ApiKeys.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EFE159F82770ABD200AE973F /* YouTubeApi */ = {
+			isa = PBXGroup;
+			children = (
+				EFE159F22770AA6100AE973F /* DescendingDataOrderYouTubeVideoRepository.swift */,
+				EF2B63CB2771110C00C0896E /* YouTubeContentDetails.swift */,
+				EFE159F62770AAB800AE973F /* YouTubeEndpoints.swift */,
+				EFE159F92770AC0200AE973F /* YouTubeSearchResponse.swift */,
+				EF2B63C5277110CB00C0896E /* YouTubeSnippet.swift */,
+				EF2B63C9277110F600C0896E /* YouTubeThumbnail.swift */,
+				EF2B63C7277110E100C0896E /* YouTubeThumbnails.swift */,
+				EF2B63C3277110B200C0896E /* YouTubeVideoItem.swift */,
+				EF2B63BF2771049C00C0896E /* YouTubeVideosResponse.swift */,
+				EF13E24527711453004277DF /* YouTubeSearchItem.swift */,
+				EF13E24727711465004277DF /* YouTubeSearchItemId.swift */,
+			);
+			path = YouTubeApi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +260,8 @@
 			name = "GMBN Browser";
 			packageProductDependencies = (
 				EF6781712770A1700041AB5B /* Dip */,
+				EF2B63BB2770FF4700C0896E /* CombineMoya */,
+				EF2B63BD2770FF4700C0896E /* Moya */,
 			);
 			productName = "GMBN Browser";
 			productReference = EF678114276DF9840041AB5B /* GMBN Browser.app */;
@@ -281,6 +337,7 @@
 			mainGroup = EF67810B276DF9840041AB5B;
 			packageReferences = (
 				EF6781702770A1700041AB5B /* XCRemoteSwiftPackageReference "Dip" */,
+				EF2B63BA2770FF4700C0896E /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = EF678115276DF9840041AB5B /* Products */;
 			projectDirPath = "";
@@ -328,15 +385,27 @@
 				EF678145276DFD610041AB5B /* VideoList.swift in Sources */,
 				EF67814F276E07BF0041AB5B /* VideoDetail.swift in Sources */,
 				EF678156276E0F770041AB5B /* NearestMinuteDurationFormatter.swift in Sources */,
+				EF2B63CC2771110C00C0896E /* YouTubeContentDetails.swift in Sources */,
 				EF678152276E0BF80041AB5B /* TimeIntervalExtensions.swift in Sources */,
 				EF678143276DFBE60041AB5B /* VideoSummary.swift in Sources */,
+				EF2B63C8277110E100C0896E /* YouTubeThumbnails.swift in Sources */,
 				EF678165276F732E0041AB5B /* Thumbnail.swift in Sources */,
 				EF67814B276DFE170041AB5B /* VideoListViewModel.swift in Sources */,
+				EF2B63C02771049C00C0896E /* YouTubeVideosResponse.swift in Sources */,
 				EF67815F276F5C5A0041AB5B /* Video.swift in Sources */,
+				EF2B63CA277110F600C0896E /* YouTubeThumbnail.swift in Sources */,
+				EF2B63C6277110CB00C0896E /* YouTubeSnippet.swift in Sources */,
+				EFE159F72770AAB800AE973F /* YouTubeEndpoints.swift in Sources */,
+				EFE159F32770AA6100AE973F /* DescendingDataOrderYouTubeVideoRepository.swift in Sources */,
+				EF2B63C4277110B200C0896E /* YouTubeVideoItem.swift in Sources */,
+				EF13E24827711465004277DF /* YouTubeSearchItemId.swift in Sources */,
 				EF67815D276F5C180041AB5B /* VideoRepository.swift in Sources */,
+				EFE159FA2770AC0200AE973F /* YouTubeSearchResponse.swift in Sources */,
+				EF13E24627711453004277DF /* YouTubeSearchItem.swift in Sources */,
 				EF678118276DF9840041AB5B /* GMBN_BrowserApp.swift in Sources */,
 				EF67814D276DFE310041AB5B /* VideoSummaryViewModel.swift in Sources */,
 				EF678163276F6FE50041AB5B /* StringExtensions.swift in Sources */,
+				EFE159F52770AA9800AE973F /* ApiKeys.swift in Sources */,
 				EF678161276F5D810041AB5B /* HardCodedResultsVideoRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +414,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2B63C227710C3F00C0896E /* StringExtensionsTests.swift in Sources */,
 				EF678158276E0F960041AB5B /* NearestMinuteDurationFormatterTests.swift in Sources */,
+				EFE159FC2770ACF000AE973F /* YouTubeIntegrationTests.swift in Sources */,
 				EF678159276E0FE80041AB5B /* NearestMinuteDurationFormatter.swift in Sources */,
 				EF67815A276E0FEC0041AB5B /* TimeIntervalExtensions.swift in Sources */,
 				EF678154276E0C220041AB5B /* TimeIntervalExtensionsTests.swift in Sources */,
@@ -689,6 +760,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		EF2B63BA2770FF4700C0896E /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
 		EF6781702770A1700041AB5B /* XCRemoteSwiftPackageReference "Dip" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AliSoftware/Dip";
@@ -700,6 +779,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EF2B63BB2770FF4700C0896E /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF2B63BA2770FF4700C0896E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		EF2B63BD2770FF4700C0896E /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF2B63BA2770FF4700C0896E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
 		EF6781712770A1700041AB5B /* Dip */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EF6781702770A1700041AB5B /* XCRemoteSwiftPackageReference "Dip" */;

@@ -1,5 +1,4 @@
 import SwiftUI
-import SwiftUIInfiniteList
 
 struct VideoList: View {
     @ObservedObject var viewModel: VideoListViewModel
