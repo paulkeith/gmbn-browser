@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0EDA5E2771184B00412567 /* Dip in Frameworks */ = {isa = PBXBuildFile; productRef = EF0EDA5D2771184B00412567 /* Dip */; };
 		EF13E24627711453004277DF /* YouTubeSearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13E24527711453004277DF /* YouTubeSearchItem.swift */; };
 		EF13E24827711465004277DF /* YouTubeSearchItemId.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13E24727711465004277DF /* YouTubeSearchItemId.swift */; };
-		EF2B63BC2770FF4700C0896E /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = EF2B63BB2770FF4700C0896E /* CombineMoya */; };
-		EF2B63BE2770FF4700C0896E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = EF2B63BD2770FF4700C0896E /* Moya */; };
 		EF2B63C02771049C00C0896E /* YouTubeVideosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B63BF2771049C00C0896E /* YouTubeVideosResponse.swift */; };
 		EF2B63C227710C3F00C0896E /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B63C127710C3F00C0896E /* StringExtensionsTests.swift */; };
 		EF2B63C4277110B200C0896E /* YouTubeVideoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B63C3277110B200C0896E /* YouTubeVideoItem.swift */; };
@@ -38,12 +37,13 @@
 		EF678161276F5D810041AB5B /* HardCodedResultsVideoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678160276F5D810041AB5B /* HardCodedResultsVideoRepository.swift */; };
 		EF678163276F6FE50041AB5B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678162276F6FE50041AB5B /* StringExtensions.swift */; };
 		EF678165276F732E0041AB5B /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF678164276F732E0041AB5B /* Thumbnail.swift */; };
-		EF6781722770A1700041AB5B /* Dip in Frameworks */ = {isa = PBXBuildFile; productRef = EF6781712770A1700041AB5B /* Dip */; };
 		EFE159F32770AA6100AE973F /* DescendingDataOrderYouTubeVideoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE159F22770AA6100AE973F /* DescendingDataOrderYouTubeVideoRepository.swift */; };
 		EFE159F52770AA9800AE973F /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE159F42770AA9800AE973F /* ApiKeys.swift */; };
 		EFE159F72770AAB800AE973F /* YouTubeEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE159F62770AAB800AE973F /* YouTubeEndpoints.swift */; };
 		EFE159FA2770AC0200AE973F /* YouTubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE159F92770AC0200AE973F /* YouTubeSearchResponse.swift */; };
 		EFE159FC2770ACF000AE973F /* YouTubeIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE159FB2770ACF000AE973F /* YouTubeIntegrationTests.swift */; };
+		EFF8D8C2277118B200D9DE91 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = EFF8D8C1277118B200D9DE91 /* CombineMoya */; };
+		EFF8D8C4277118B200D9DE91 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = EFF8D8C3277118B200D9DE91 /* Moya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,9 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF2B63BC2770FF4700C0896E /* CombineMoya in Frameworks */,
-				EF6781722770A1700041AB5B /* Dip in Frameworks */,
-				EF2B63BE2770FF4700C0896E /* Moya in Frameworks */,
+				EFF8D8C2277118B200D9DE91 /* CombineMoya in Frameworks */,
+				EF0EDA5E2771184B00412567 /* Dip in Frameworks */,
+				EFF8D8C4277118B200D9DE91 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +259,9 @@
 			);
 			name = "GMBN Browser";
 			packageProductDependencies = (
-				EF6781712770A1700041AB5B /* Dip */,
-				EF2B63BB2770FF4700C0896E /* CombineMoya */,
-				EF2B63BD2770FF4700C0896E /* Moya */,
+				EF0EDA5D2771184B00412567 /* Dip */,
+				EFF8D8C1277118B200D9DE91 /* CombineMoya */,
+				EFF8D8C3277118B200D9DE91 /* Moya */,
 			);
 			productName = "GMBN Browser";
 			productReference = EF678114276DF9840041AB5B /* GMBN Browser.app */;
@@ -336,8 +336,8 @@
 			);
 			mainGroup = EF67810B276DF9840041AB5B;
 			packageReferences = (
-				EF6781702770A1700041AB5B /* XCRemoteSwiftPackageReference "Dip" */,
-				EF2B63BA2770FF4700C0896E /* XCRemoteSwiftPackageReference "Moya" */,
+				EF0EDA5C2771184B00412567 /* XCRemoteSwiftPackageReference "Dip" */,
+				EFF8D8C0277118B200D9DE91 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = EF678115276DF9840041AB5B /* Products */;
 			projectDirPath = "";
@@ -760,15 +760,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EF2B63BA2770FF4700C0896E /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 15.0.0;
-			};
-		};
-		EF6781702770A1700041AB5B /* XCRemoteSwiftPackageReference "Dip" */ = {
+		EF0EDA5C2771184B00412567 /* XCRemoteSwiftPackageReference "Dip" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AliSoftware/Dip";
 			requirement = {
@@ -776,23 +768,31 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		EFF8D8C0277118B200D9DE91 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EF2B63BB2770FF4700C0896E /* CombineMoya */ = {
+		EF0EDA5D2771184B00412567 /* Dip */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EF2B63BA2770FF4700C0896E /* XCRemoteSwiftPackageReference "Moya" */;
+			package = EF0EDA5C2771184B00412567 /* XCRemoteSwiftPackageReference "Dip" */;
+			productName = Dip;
+		};
+		EFF8D8C1277118B200D9DE91 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFF8D8C0277118B200D9DE91 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = CombineMoya;
 		};
-		EF2B63BD2770FF4700C0896E /* Moya */ = {
+		EFF8D8C3277118B200D9DE91 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EF2B63BA2770FF4700C0896E /* XCRemoteSwiftPackageReference "Moya" */;
+			package = EFF8D8C0277118B200D9DE91 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
-		};
-		EF6781712770A1700041AB5B /* Dip */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EF6781702770A1700041AB5B /* XCRemoteSwiftPackageReference "Dip" */;
-			productName = Dip;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

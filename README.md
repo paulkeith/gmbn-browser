@@ -23,4 +23,5 @@ Supports iOS 15 and later.
 * All asynchronous operations are modelled using the Combine framework.
 * Dependency injection is used to keep code SOLID and testable.
 * [Dip](https://github.com/AliSoftware/Dip) is used for the DI container.
+* [Moya](https://github.com/Moya/Moya) is used for type-safe REST API access.
 * Swift Package Manager is used to manage third-party dependencies.
