@@ -7,13 +7,18 @@ struct VideoSummary: View {
         VStack {
             Thumbnail(url: self.viewModel.imageUrl)
             HStack {
-                Text(self.viewModel.published, style: .date).font(.caption)
+                Text(self.viewModel.published, style: .date)
+                    .foregroundColor(.black)
+                    .font(.caption)
                 Spacer()
-                Text(self.durationFormatter.format(self.viewModel.duration)).font(.caption)
+                Text(self.durationFormatter.format(self.viewModel.duration))
+                    .foregroundColor(.black)
+                    .font(.caption)
             }
             .padding(6)
             
             Text(self.viewModel.title)
+                .foregroundColor(.black)
                 .multilineTextAlignment(.center)
                 .font(.title)
                 .padding([.leading, .trailing, .bottom], 12)

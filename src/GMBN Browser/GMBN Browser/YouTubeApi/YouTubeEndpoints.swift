@@ -8,7 +8,8 @@ enum YouTubeEndpoints {
         channelType: String,
         order: String,
         key: String,
-        maxResults: Int
+        maxResults: Int,
+        pageToken: String
     )
     case videos(
         parts: [String],
@@ -29,7 +30,7 @@ extension YouTubeEndpoints: TargetType {
     
     var path: String {
         switch self {
-        case .search(part: _, channelId: _, channelType: _, order: _, key: _, maxResults: _):
+        case .search(part: _, channelId: _, channelType: _, order: _, key: _, maxResults: _, pageToken: _):
             return "/search"
         case .videos(parts: _, key: _, maxResults: _, ids: _):
             return "/videos"
@@ -38,7 +39,7 @@ extension YouTubeEndpoints: TargetType {
     
     var method: Moya.Method {
         switch self {
-        case .search(part: _, channelId: _, channelType: _, order: _, key: _, maxResults: _):
+        case .search(part: _, channelId: _, channelType: _, order: _, key: _, maxResults: _, pageToken: _):
             return .get
         case .videos(parts: _, key: _, maxResults: _, ids: _):
             return .get
@@ -47,14 +48,15 @@ extension YouTubeEndpoints: TargetType {
     
     var task: Task {
         switch self {
-        case let .search(part: part, channelId: channelId, channelType: channelType, order: order, key: key, maxResults: maxResults):
+        case let .search(part: part, channelId: channelId, channelType: channelType, order: order, key: key, maxResults: maxResults, pageToken: pageToken):
             let parameters: [String: Any] = [
                 "part": part,
                 "channelId": channelId,
                 "channelType": channelType,
                 "order": order,
                 "key": key,
-                "maxResults": maxResults
+                "maxResults": maxResults,
+                "pageToken": pageToken
             ]
             
             return .requestParameters(

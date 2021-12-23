@@ -1,7 +1,7 @@
 import Foundation
 
 struct YouTubeSearchResponse {
-    let nextPageToken: String
+    let nextPageToken: String?
     let items: [YouTubeSearchItem]
 }
 

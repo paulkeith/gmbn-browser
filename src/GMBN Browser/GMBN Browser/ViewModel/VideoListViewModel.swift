@@ -20,11 +20,12 @@ class VideoListViewModel: ObservableObject {
             
         self.isLoading = true
         
-        self.repository.get(offset: self.items.count)
-            .sink { [self] _ in
+        self.repository.get(pageToken: self.nextPageToken)
+            .receive(on: DispatchQueue.main)
+            .sink { [self] foo in
                 self.isLoading = false
-            } receiveValue: { [self] newVideos in
-                let newViewModels = newVideos.map { video in
+            } receiveValue: { [self] videoPage in
+                let newViewModels = videoPage.videos.map { video in
                     VideoSummaryViewModel(
                         id: video.id,
                         imageUrl: video.imageUrl,
@@ -34,7 +35,9 @@ class VideoListViewModel: ObservableObject {
                         duration: video.duration
                     )
                 }
+                
                 self.items += newViewModels
+                self.nextPageToken = videoPage.nextPageToken
             }
             .store(in: &self.subscriptions)
         }

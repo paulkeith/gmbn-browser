@@ -22,7 +22,8 @@ class YouTubeIntegrationTests: XCTestCase {
                 channelType: "any",
                 order: "date",
                 key: ApiKeys.youTube,
-                maxResults: 50
+                maxResults: 50,
+                pageToken: ""
             ))
             .sink(receiveCompletion: { completion in
                 myExpectation.fulfill()
@@ -75,5 +76,21 @@ class YouTubeIntegrationTests: XCTestCase {
             .store(in: &self.cancellables)
         
         waitForExpectations(timeout: 10, handler: nil)
+    }
+    
+    func skipGetPage_withEmptyPageToken_getsFirstPage() {
+        let myExpectation = expectation(description: "")
+        
+        let repository = DescendingDateOrderYouTubeVideoRepository()
+        
+        repository.get(pageToken: nil)
+            .sink(
+                receiveCompletion: { _ in myExpectation.fulfill() },
+                receiveValue: { page in
+                    XCTAssertTrue(page.videos.count > 0)
+                })
+            .store(in: &self.cancellables)
+        
+        waitForExpectations(timeout: 3, handler: nil)
     }
 }

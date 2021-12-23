@@ -8,18 +8,23 @@ struct VideoDetail: View {
             VStack {
                 Thumbnail(url: self.viewModel.imageUrl)
                 HStack {
-                    Text(self.viewModel.published, style: .date).font(.caption)
+                    Text(self.viewModel.published, style: .date)
+                        .foregroundColor(.black)
+                        .font(.caption)
                     Spacer()
                     Text(self.durationFormatter.format(self.viewModel.duration))
+                        .foregroundColor(.black)
                         .font(.caption)
                 }
                 .padding(Constants.defaultCaptionPadding)
                 Text(self.viewModel.title)
+                    .foregroundColor(.black)
                     .multilineTextAlignment(.center)
                     .font(.title)
                     .padding([.leading, .trailing, .bottom], Constants.defaultPadding)
                 
                 Text(self.viewModel.description)
+                    .foregroundColor(.black)
                     .padding([.leading, .trailing, .bottom], Constants.defaultPadding)
             }
             .background(.white)
