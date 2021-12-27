@@ -2,7 +2,7 @@
 
 ## Description
 
-An iPhone application for browsing all the videos from the [GMBN YouTube channel](https://www.youtube.com/c/gmbn).  Videos are presented in ascending date order.  Scrolling to the bottom of the list causes the next page of results to load.  Tapping on a video shows a detail view with more information about the selected video.
+An iPhone application for browsing all the videos from the [GMBN YouTube channel](https://www.youtube.com/c/gmbn).  Videos are presented in ascending date order.  Scrolling to the bottom of the list causes the next page of results to load.  Tapping on a video shows a detail view with a player and more information.
 
 Supports iOS 15 and later.
 
@@ -26,4 +26,5 @@ Supports iOS 15 and later.
 * Dependency injection is used to keep code SOLID and testable.
 * [Dip](https://github.com/AliSoftware/Dip) is used for the DI container.
 * [Moya](https://github.com/Moya/Moya) is used for type-safe REST API access.
+* [YouTubePlayerKit](https://github.com/SvenTiigi/YouTubePlayerKit) is used to play the YouTube videos.
 * Swift Package Manager is used to manage third-party dependencies.
