@@ -4,16 +4,8 @@ import Foundation
 import Moya
 
 class DescendingDateOrderYouTubeVideoRepository: VideoRepository {
-    private let api: MoyaProvider<YouTubeEndpoints>
+    private let api = MoyaProvider<YouTubeEndpoints>()
     private let channelId = "UC_A--fhX5gea0i4UtpD99Gg"
-        
-    init() {
-        let plugin = NetworkLoggerPlugin(
-            configuration: NetworkLoggerPlugin.Configuration(logOptions: .verbose)
-        )
-        
-        self.api = MoyaProvider<YouTubeEndpoints>(plugins: [plugin])
-    }
     
     func get(pageToken: String?) -> AnyPublisher<VideoPage, Error> {
         return self.api.requestPublisher(

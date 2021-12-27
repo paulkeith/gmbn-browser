@@ -9,8 +9,9 @@ Supports iOS 15 and later.
 ## Getting Started
 
 1. Open src/GMBN Browser/GMBN Browser.xcodeproj in xcode.
-2. Go to File -> Packages -> Resolve Package Versions
-3. Press the play button.
+2. Go to File -> Packages -> Resolve Package Versions.
+3. Set your YouTube API key in `ApiKeys.youTube`.
+4. Press the play button.
 
 ## Running The Tests
 
