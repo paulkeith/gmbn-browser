@@ -26,7 +26,7 @@ struct VideoList: View {
                     }
                 }
                 .background(Color(.secondarySystemBackground))
-                .onAppear { self.viewModel.loadMore() }
+                .onLoad { self.viewModel.loadMore() }
             }
             .navigationTitle("All Videos".localise())
         }
