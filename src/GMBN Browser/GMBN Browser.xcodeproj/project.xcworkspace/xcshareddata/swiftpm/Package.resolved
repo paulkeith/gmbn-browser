@@ -45,6 +45,15 @@
           "revision": "7c17a6ccca06b5c107cfa4284e634562ddaf5951",
           "version": "6.2.0"
         }
+      },
+      {
+        "package": "YouTubePlayerKit",
+        "repositoryURL": "https://github.com/SvenTiigi/YouTubePlayerKit.git",
+        "state": {
+          "branch": null,
+          "revision": "b2b447576204ebcef702a47f198b169c1300b078",
+          "version": "1.1.6"
+        }
       }
     ]
   },
